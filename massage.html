@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<div class="mui-content" id="offMassage">
+			<!--顶部-->
+		    <header class="mui-bar mui-bar-nav" id="header">
+				<h1 class="mui-title">消息</h1>
+				<a href="index.html" class="mui-icon mui-icon-back mui-pull-left"></a>
+			</header>
+			<!--底部导航-->
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="index.html">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" href="order.html">
+					<span class="mui-icon mui-icon-chatboxes"></span>
+					<span class="mui-tab-label">下单</span>
+				</a>
+				<a class="mui-tab-item" href="porder.html">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-cart mui-spin"><span class="mui-badge">9</span></span>
+					<span class="mui-tab-label">自营</span>
+				</a>
+				<a class="mui-tab-item" href="porder.html">
+					<span class="mui-icon mui-icon-list"></span>
+					<span class="mui-tab-label">订单</span>
+				</a>
+			</nav>
+			<div id="mass-content">
+				<p>15:00</p>
+				<ul class="mui-table-view" id="mass-pass">
+					<li class="mui-table-view-cell">审核通过</li>
+					<li class="mui-table-view-cell">你的订单：1258963214578，已通过审核</li>
+				</ul>
+				<p>12-10 15:00</p>
+				<ul class="mui-table-view" id="mass-no">
+					<li class="mui-table-view-cell">未通过审核</li>
+					<li class="mui-table-view-cell">你的订单：1258963214577，未通过审核</li>
+				</ul>
+			</div>
+		<script type="text/javascript" charset="utf-8">
+		//a标签跳转
+		mui('body').on('tap','a',function(){
+		    window.top.location.href=this.href;
+		});
+</script>
+	</body>
+</html>
